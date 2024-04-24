@@ -38,9 +38,10 @@ To get the application running locally:
    cd java-birds-api
 
 3. **Run the application with Docker Compose:**
-   ```bash
-   docker-compose up --build
+   - It will start a postgres image in the background and automatically create the db. Afterward, it will run mvn package, automatically start the Spring Boot application and create the necessary db tables.
+   The app should be available at http://localhost:8080, so please make sure the port is free.
+    ```bash
+    docker-compose up --build
 
 4. **Try out the API:**
-
-   http://localhost:8080/swagger-ui/index.html?configUrl=/docs/swagger-config
+   - http://localhost:8080/swagger-ui/index.html?configUrl=/docs/swagger-config
