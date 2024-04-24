@@ -5,7 +5,6 @@ import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import org.raduromaniuc.birds.constants.ApiUrl;
 import org.raduromaniuc.birds.dto.SightingDto;
-import org.raduromaniuc.birds.entity.Sighting;
 import org.raduromaniuc.birds.service.SightingService;
 import org.springdoc.api.annotations.ParameterObject;
 import org.springframework.data.domain.Page;
@@ -14,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 
-@RestController //todo move to sightingDto
+@RestController
 @RequestMapping(ApiUrl.SIGHTINGS_API_URL)
 public class SightingController {
 
